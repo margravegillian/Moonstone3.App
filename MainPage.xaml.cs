@@ -2,23 +2,24 @@
 
 public partial class MainPage : ContentPage
 {
-	int count = 0;
+    int count = 0;
 
-	public MainPage()
-	{
-		InitializeComponent();
-	}
 
-	private void OnCounterClicked(object sender, EventArgs e)
-	{
-		count++;
+    public MainPage()
+    {
+        InitializeComponent();
+    }
 
-		if (count == 1)
-			CounterBtn.Text = $"Clicked {count} time";
-		else
-			CounterBtn.Text = $"Clicked {count} times";
+    private void OnCounterClicked(object sender, EventArgs e)
+    {
+        App.Current.MainPage = new NavigationPage(new SwitchDemoPage());
+    }
+    private void OnjgClicked(object sender, EventArgs e)
+    {
+        App.Current.MainPage = new NavigationPage(new jandg());
+    }
 
-		SemanticScreenReader.Announce(CounterBtn.Text);
-	}
+
+
 }
 
