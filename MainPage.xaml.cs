@@ -2,8 +2,8 @@
 
 public partial class MainPage : ContentPage
 {
-    int count = 0;
 
+    bool moonstatus = false;
 
     public MainPage()
     {
@@ -39,7 +39,33 @@ public partial class MainPage : ContentPage
         App.Current.MainPage = new NavigationPage(new jandg());
     }
 
+    async private void OnImageButtonClicked(object sender, EventArgs e)
+    {
+        try
+        {
+            if (moonstatus == false)
+            {
+                await Flashlight.Default.TurnOnAsync();
+                label.Text = String.Format("Moonstone Go");
+                moonstatus = true;
+                moonpic.Source = "moon3.png";
 
+            }
+            else
+            {
+                await Flashlight.Default.TurnOffAsync();
+                label.Text = String.Format("Moonstone Retreat");
+                moonstatus = false;
+                moonpic.Source = "moon2.png";
+            }
+            // label.Text = String.Format(" is now {0}", e.Value);
+        }
+        catch (Exception)
+        {
 
+            throw;
+        }
+
+    }
 }
 
