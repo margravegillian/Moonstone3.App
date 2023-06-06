@@ -50,6 +50,7 @@
 
 	<ItemGroup>
 	  <None Remove="Resources\Images\jgice.jpg" />
+	  <None Remove="Resources\Images\moo2.png" />
 	</ItemGroup>
 
 	<ItemGroup>
