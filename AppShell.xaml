@@ -5,6 +5,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:Moonstone3">
     <!--Shell.FlyoutBehavior="Disabled">-->
+   
 
     <Shell.FlyoutHeader>
         <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
@@ -16,23 +17,33 @@
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+        
+        <ShellContent
+        Title="Moonstone"
+        ContentTemplate="{DataTemplate local:MoonPage}"
+        Route="MoonPage" />
+        
+        <ShellContent
+        Title="Soundboard"
+        ContentTemplate="{DataTemplate local:SoundBoard}"
+        Route="soundboard" />
 
     </FlyoutItem>
     
-       <FlyoutItem Title="Moonstone Page">
+       <!--<FlyoutItem Title="Moonstone Page">
         <ShellContent
         Title="Moonstone"
         ContentTemplate="{DataTemplate local:MoonPage}"
         Route="MoonPage" />
 
-    </FlyoutItem>
+    </FlyoutItem>-->
 
-    <FlyoutItem Title="Soundboard">
+    <!--<FlyoutItem Title="Soundboard">
         <ShellContent
         Title="Soundboard"
         ContentTemplate="{DataTemplate local:SoundBoard}"
         Route="soundboard" />
-    </FlyoutItem>
+    </FlyoutItem>-->
     <FlyoutItem Title="custom transport">
         <ShellContent
         Title="custom transport"
@@ -40,13 +51,23 @@
         Route="soundboard" />
 
     </FlyoutItem>
+    <!--<TabBar>
+        <Tab Title="Home Page">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+        <Tab Title="Moonstone">
+            <ShellContent ContentTemplate="{DataTemplate local:MoonPage}"/>
+        </Tab>
+        <Tab Title="Sound Board">
+            <ShellContent ContentTemplate="{DataTemplate local:SoundBoard}"/>
+        </Tab>
+    </TabBar>-->
 
-
-    <Shell.FlyoutFooter>
+    <!--<Shell.FlyoutFooter>
         <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
             <Label TextColor="White" Text="I'm a footer"/>
         </Grid>
-    </Shell.FlyoutFooter>
-  
+    </Shell.FlyoutFooter>-->
+       
 
 </Shell>
