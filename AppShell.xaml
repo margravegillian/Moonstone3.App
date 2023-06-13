@@ -3,12 +3,43 @@
     x:Class="Moonstone3.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Moonstone3"
-    Shell.FlyoutBehavior="Disabled">
+    xmlns:local="clr-namespace:Moonstone3">
+    <!--Shell.FlyoutBehavior="Disabled">-->
 
-    <ShellContent
+    <Shell.FlyoutHeader>
+        <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
+            
+        </Grid>
+    </Shell.FlyoutHeader>
+    <FlyoutItem Title="Main Page">
+        <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
         Route="MainPage" />
+
+    </FlyoutItem>
+    
+       <FlyoutItem Title="Moonstone Page">
+        <ShellContent
+        Title="Moonstone"
+        ContentTemplate="{DataTemplate local:MoonPage}"
+        Route="MoonPage" />
+
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Soundboard">
+        <ShellContent
+        Title="Soundboard"
+        ContentTemplate="{DataTemplate local:SoundBoard}"
+        Route="soundboard" />
+
+    </FlyoutItem>
+
+    <Shell.FlyoutFooter>
+        <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
+            <Label TextColor="White" Text="I'm a footer"/>
+        </Grid>
+    </Shell.FlyoutFooter>
+  
 
 </Shell>

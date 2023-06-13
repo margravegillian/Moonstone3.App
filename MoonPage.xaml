@@ -1,9 +1,9 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Moonstone3.MainPage"
-             BackgroundColor="Black">
-
+             x:Class="Moonstone3.MoonPage"
+             BackgroundColor="Black"
+             Title="MoonPage">
     <ScrollView>
         <VerticalStackLayout
             Spacing="25"
@@ -11,17 +11,12 @@
             VerticalOptions="Center">
 
 
-            <Image
-                Source="jgice.jpg"
-                SemanticProperties.Description="us"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
-
-            <!--<Label 
+          
+            <Label 
             x:Name="label"
             Text="Moonstone"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />-->
+            HorizontalOptions="Center" />
 
             <!--<Switch
                 x:Name="moonstone"
@@ -29,7 +24,7 @@
                 HorizontalOptions="Center"
                 IsToggled="False"
                 Toggled="switcher_Toggled"
-                />--><!--
+                />-->
             <ImageButton
                 x:Name="moonpic"
                 Source="moon2.png"
@@ -40,7 +35,7 @@
                 Clicked="OnImageButtonClicked"
                 
                />
-            <Button
+            <!--<Button
                 x:Name="SndBtn"
                 Text="Sound Board"
                 Clicked="OnSndBtnClicked"
@@ -49,5 +44,4 @@
 
         </VerticalStackLayout>
     </ScrollView>
-
 </ContentPage>
