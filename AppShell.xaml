@@ -26,14 +26,21 @@
         Route="MoonPage" />
 
     </FlyoutItem>
-    
+
     <FlyoutItem Title="Soundboard">
         <ShellContent
         Title="Soundboard"
         ContentTemplate="{DataTemplate local:SoundBoard}"
         Route="soundboard" />
+    </FlyoutItem>
+    <FlyoutItem Title="custom transport">
+        <ShellContent
+        Title="custom transport"
+        ContentTemplate="{DataTemplate local:CustomTransport}"
+        Route="soundboard" />
 
     </FlyoutItem>
+
 
     <Shell.FlyoutFooter>
         <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">

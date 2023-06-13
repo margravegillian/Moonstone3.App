@@ -1,20 +1,45 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              x:Class="Moonstone3.SoundBoard"
              Title="SoundBoard">
     <VerticalStackLayout>
-        <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
-        <Button
+           <Button
             Text="hallowone"
             x:Name='btnHallow'
             Clicked="sndButton" 
             
             />
-            
+
+        <!--<toolkit:MediaElement x:Name="mediaElement"
+                              ShouldAutoPlay="False"
+                              ShouldShowPlaybackControls="False"
+                              Source="embed://spit.mp3"
+/>
+        <HorizontalStackLayout BindingContext="{x:Reference mediaElement}">
+            <Button Text="spit" 
+            HorizontalOptions="CenterAndExpand"
+            Clicked="OnPlayPauseButtonClicked">
+                <Button.Triggers>
+                    <DataTrigger TargetType="Button"
+                                 Binding="{Binding CurrentState}"
+                                 Value="{x:Static toolkit:MediaElementState.Playing}">
+                        <Setter Property="Text"
+                                Value="Pause"/>
+                    </DataTrigger>
+                    <DataTrigger TargetType="Button"
+                                 Binding="{Binding CurrentState}"
+                                 Value="{x:Static toolkit:MediaElementState.Buffering}">
+                        <Setter Property="IsEnabled"
+                                Value="False"/>
+                    </DataTrigger>
+
+                    
+                </Button.Triggers>
+            </Button>
+        </HorizontalStackLayout>-->
+
 
 
     </VerticalStackLayout>

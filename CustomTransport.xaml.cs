@@ -1,14 +1,11 @@
+
 namespace Moonstone3;
-public partial class SoundBoard : ContentPage
+
+public partial class CustomTransport : ContentPage
 {
-    public SoundBoard()
+    public CustomTransport()
     {
         InitializeComponent();
-    }
-
-    private void sndButton(object sender, EventArgs e)
-    {
-
     }
     //void OnPlayPauseButtonClicked(object sender, EventArgs args)
     //{
