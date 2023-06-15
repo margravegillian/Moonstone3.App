@@ -6,8 +6,14 @@ public partial class SoundBoard : ContentPage
         InitializeComponent();
     }
 
-    private void sndButton(object sender, EventArgs e)
+
+
+    private void OnHalloweenBtn(object sender, EventArgs e)
     {
+        if (mediaElement.CurrentState == CommunityToolkit.Maui.Core.Primitives.MediaElementState.Playing)
+            mediaElement.Pause();
+        else if (mediaElement.CurrentState == CommunityToolkit.Maui.Core.Primitives.MediaElementState.Paused)
+            mediaElement.Play();
 
     }
     //void OnPlayPauseButtonClicked(object sender, EventArgs args)
