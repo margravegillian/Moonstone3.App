@@ -8,11 +8,15 @@ public partial class SoundBoard : ContentPage
 
 
 
+    private void OnStopButtonclicked(object sender, EventArgs e)
+    {
+        mediaElement.Stop();
+    }
     private void OnHalloweenBtn(object sender, EventArgs e)
     {
         if (mediaElement.CurrentState == CommunityToolkit.Maui.Core.Primitives.MediaElementState.Playing)
             mediaElement.Pause();
-        else if (mediaElement.CurrentState == CommunityToolkit.Maui.Core.Primitives.MediaElementState.Paused)
+        else if (mediaElement.CurrentState == CommunityToolkit.Maui.Core.Primitives.MediaElementState.Paused || mediaElement.CurrentState == CommunityToolkit.Maui.Core.Primitives.MediaElementState.Stopped)
             mediaElement.Play();
 
     }
@@ -33,4 +37,8 @@ public partial class SoundBoard : ContentPage
     //{
     //    mediaElement.Stop();
     //}
+    void ContentPage_unloaded(object sender, EventArgs e)
+    {
+        mediaElement.Handler?.DisconnectHandler();
+    }
 }

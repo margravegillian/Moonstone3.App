@@ -12,6 +12,9 @@
             Clicked="OnHalloweenBtn" 
             
             />
+            <Button
+                Text="stop"
+                Clicked="OnStopButtonclicked"></Button>
 
             <toolkit:MediaElement  WidthRequest="400" HeightRequest="300" x:Name="mediaElement"
                               ShouldAutoPlay="False"
