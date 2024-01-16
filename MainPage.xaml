@@ -12,9 +12,9 @@
 
 
             <Image
-                Source="jgice.jpg"
+                Source="nikki.jpg"
                 SemanticProperties.Description="us"
-                HeightRequest="200"
+                HeightRequest="400"
                 HorizontalOptions="Center" />
 
             <!--<Label 
