@@ -7,7 +7,7 @@
     <VerticalStackLayout>
         
           <Image
-                Source="jgice.jpg"
+                Source="nikki.jpg"
                 SemanticProperties.Description="us"
                 HeightRequest="200"
                 HorizontalOptions="Center" />
