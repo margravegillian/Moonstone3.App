@@ -53,6 +53,7 @@
 	  <None Remove="Resources\Images\moon2.png" />
 	  <None Remove="Resources\Images\moon3.png" />
 	  <None Remove="Resources\Images\nikki.jpg" />
+	  <None Remove="Resources\Raw\dead.mp3" />
 	</ItemGroup>
 
 	<ItemGroup>

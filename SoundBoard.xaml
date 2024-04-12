@@ -7,7 +7,7 @@
     <ScrollView>
         <VerticalStackLayout>
             <Button
-            Text="hallowone"
+            Text="DEADTOME"
             x:Name="HallowBtn"
             Clicked="OnHalloweenBtn" 
             
@@ -19,7 +19,7 @@
             <toolkit:MediaElement  WidthRequest="400" HeightRequest="300" x:Name="mediaElement"
                               ShouldAutoPlay="False"
                               ShouldShowPlaybackControls="True"
-                              Source="embed://spit.mp3"/>
+                              Source="embed://dead.mp3"/>
 
        
             
