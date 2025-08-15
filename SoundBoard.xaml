@@ -5,50 +5,24 @@
              x:Class="Moonstone3.SoundBoard"
              Title="SoundBoard">
     <ScrollView>
-        <VerticalStackLayout>
-            <Button
-            Text="DEADTOME"
-            x:Name="HallowBtn"
-            Clicked="OnHalloweenBtn" 
-            
-            />
-            <Button
-                Text="stop"
-                Clicked="OnStopButtonclicked"></Button>
+        <VerticalStackLayout Padding="10" Spacing="10">
 
-            <toolkit:MediaElement  WidthRequest="400" HeightRequest="300" x:Name="mediaElement"
-                              ShouldAutoPlay="False"
-                              ShouldShowPlaybackControls="True"
-                              Source="embed://dead.mp3"/>
+            <Button Text="DEADTOME"
+                    x:Name="HallowBtn"
+                    Clicked="OnHalloweenBtn" />
 
-       
-            
-            
-        <!--<HorizontalStackLayout BindingContext="{x:Reference mediaElement}">
-            <Button Text="spit" 
-            HorizontalOptions="CenterAndExpand"
-            Clicked="OnPlayPauseButtonClicked">
-                <Button.Triggers>
-                    <DataTrigger TargetType="Button"
-                                 Binding="{Binding CurrentState}"
-                                 Value="{x:Static toolkit:MediaElementState.Playing}">
-                        <Setter Property="Text"
-                                Value="Pause"/>
-                    </DataTrigger>
-                    <DataTrigger TargetType="Button"
-                                 Binding="{Binding CurrentState}"
-                                 Value="{x:Static toolkit:MediaElementState.Buffering}">
-                        <Setter Property="IsEnabled"
-                                Value="False"/>
-                    </DataTrigger>
+            <Button Text="Relax"
+                    x:Name="RelaxBtn"
+                    Clicked="OnRelaxBtn" />
 
-                    
-                </Button.Triggers>
-            </Button>
-        </HorizontalStackLayout>-->
+            <Button Text="Stop"
+                    Clicked="OnStopButtonclicked" />
 
-
-
+            <toolkit:MediaElement x:Name="mediaElement"
+                                  WidthRequest="400"
+                                  HeightRequest="300"
+                                  ShouldAutoPlay="False"
+                                  ShouldShowPlaybackControls="True" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
