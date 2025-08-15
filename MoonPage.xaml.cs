@@ -20,7 +20,7 @@ public partial class MoonPage : ContentPage
             if (moonstatus == false)
             {
                 await Flashlight.Default.TurnOnAsync();
-                label.Text = String.Format("Moonstone Go");
+                label1.Text = String.Format("MoonLight");
                 moonstatus = true;
                 moonpic.Source = "moon3.png";
 
@@ -28,7 +28,7 @@ public partial class MoonPage : ContentPage
             else
             {
                 await Flashlight.Default.TurnOffAsync();
-                label.Text = String.Format("Moonstone Retreat");
+                label1.Text = String.Format("Moonstone");
                 moonstatus = false;
                 moonpic.Source = "moon2.png";
             }

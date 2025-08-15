@@ -13,10 +13,12 @@
 
           
             <Label 
-            x:Name="label"
+            x:Name="label1"
             Text="Moonstone"
             VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            HorizontalOptions="Center"
+            FontSize="32"
+            TextColor="#4B0082"    />
 
             <!--<Switch
                 x:Name="moonstone"
