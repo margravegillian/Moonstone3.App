@@ -9,20 +9,39 @@
 
             <Button Text="DEADTOME"
                     x:Name="HallowBtn"
-                    Clicked="OnHalloweenBtn" />
+                    Clicked="OnHalloweenBtn"
+                    WidthRequest="120"
+                    HeightRequest="40"
+                    BackgroundColor="Lavender"
+                    TextColor="Purple"
+                    CornerRadius="8"
+                    FontSize="14"/>
 
             <Button Text="Relax"
                     x:Name="RelaxBtn"
-                    Clicked="OnRelaxBtn" />
+                    Clicked="OnRelaxBtn"
+                     WidthRequest="120"
+                    HeightRequest="40"
+                    BackgroundColor="Lavender"
+                    TextColor="Purple"
+                    CornerRadius="8"
+                    FontSize="14"/>
 
             <Button Text="Stop"
-                    Clicked="OnStopButtonclicked" />
+                    Clicked="OnStopButtonclicked"
+                    WidthRequest="120"
+                    HeightRequest="40"
+                    BackgroundColor="Lavender"
+                    TextColor="Purple"
+                    CornerRadius="8"
+                    FontSize="14"/>
 
             <toolkit:MediaElement x:Name="mediaElement"
                                   WidthRequest="400"
                                   HeightRequest="300"
                                   ShouldAutoPlay="False"
-                                  ShouldShowPlaybackControls="True" />
+                                  ShouldShowPlaybackControls="True" 
+                                  Volume="1.0" />
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>
