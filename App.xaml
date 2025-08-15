@@ -4,6 +4,7 @@
              x:Class="Moonstone3.App">
     <Application.Resources>
         <!-- Define purple color resources using SolidColorBrush -->
+        <Color x:Key="ShellTitleColor">#800080</Color> <!-- Purple -->
         <SolidColorBrush x:Key="PrimaryPurple" Color="#800080" />
         <SolidColorBrush x:Key="LightPurple" Color="#E6E6FA" />
         <SolidColorBrush x:Key="TextPurple" Color="#4B0082" />

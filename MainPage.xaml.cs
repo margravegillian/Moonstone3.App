@@ -34,9 +34,9 @@ public partial class MainPage : ContentPage
     //        throw;
     //    }
     //}
-    private void OnSndBtnClicked(object sender, EventArgs e)
+    private async void OnSndBtnClicked(object sender, EventArgs e)
     {
-        App.Current.MainPage = new NavigationPage(new SoundBoard());
+        await Shell.Current.GoToAsync(nameof(SoundBoard));
     }
 
     //async private void OnImageButtonClicked(object sender, EventArgs e)

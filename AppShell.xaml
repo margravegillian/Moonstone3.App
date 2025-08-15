@@ -3,7 +3,9 @@
     x:Class="Moonstone3.AppShell"
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-    xmlns:local="clr-namespace:Moonstone3">
+    xmlns:local="clr-namespace:Moonstone3"
+    Shell.TitleColor="{StaticResource ShellTitleColor}"
+    Shell.ForegroundColor="{StaticResource ShellTitleColor}">
     <!--Shell.FlyoutBehavior="Disabled">-->
    
 
@@ -12,7 +14,7 @@
             
         </Grid>
     </Shell.FlyoutHeader>
-    <FlyoutItem Title="MainPage">
+    <FlyoutItem Title="Moonstone"> <!--change back to MainPage if issues-->
         <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
@@ -27,6 +29,10 @@
         Title="Soundboard"
         ContentTemplate="{DataTemplate local:SoundBoard}"
         Route="soundboard" />
+        <ShellContent
+            Title="About"
+            ContentTemplate="{DataTemplate local:AboutPage}"
+            Route="AboutPage"/>
 
     </FlyoutItem>
     
