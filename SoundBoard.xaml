@@ -12,18 +12,14 @@
                     Clicked="OnHalloweenBtn"
                     WidthRequest="120"
                     HeightRequest="40"
-                    BackgroundColor="Lavender"
-                    TextColor="Purple"
                     CornerRadius="8"
                     FontSize="14"/>
 
             <Button Text="Relax"
                     x:Name="RelaxBtn"
                     Clicked="OnRelaxBtn"
-                     WidthRequest="120"
+                    WidthRequest="120"
                     HeightRequest="40"
-                    BackgroundColor="Lavender"
-                    TextColor="Purple"
                     CornerRadius="8"
                     FontSize="14"/>
 
@@ -31,8 +27,6 @@
                     Clicked="OnStopButtonclicked"
                     WidthRequest="120"
                     HeightRequest="40"
-                    BackgroundColor="Lavender"
-                    TextColor="Purple"
                     CornerRadius="8"
                     FontSize="14"/>
 

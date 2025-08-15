@@ -12,7 +12,7 @@
             
         </Grid>
     </Shell.FlyoutHeader>
-    <FlyoutItem Title="Main Page">
+    <FlyoutItem Title="MainPage">
         <ShellContent
         Title="Home"
         ContentTemplate="{DataTemplate local:MainPage}"
@@ -30,44 +30,6 @@
 
     </FlyoutItem>
     
-       <!--<FlyoutItem Title="Moonstone Page">
-        <ShellContent
-        Title="Moonstone"
-        ContentTemplate="{DataTemplate local:MoonPage}"
-        Route="MoonPage" />
-
-    </FlyoutItem>-->
-
-    <!--<FlyoutItem Title="Soundboard">
-        <ShellContent
-        Title="Soundboard"
-        ContentTemplate="{DataTemplate local:SoundBoard}"
-        Route="soundboard" />
-    </FlyoutItem>-->
-    <FlyoutItem Title="custom transport">
-        <ShellContent
-        Title="custom transport"
-        ContentTemplate="{DataTemplate local:CustomTransport}"
-        Route="soundboard" />
-
-    </FlyoutItem>
-    <!--<TabBar>
-        <Tab Title="Home Page">
-            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
-        </Tab>
-        <Tab Title="Moonstone">
-            <ShellContent ContentTemplate="{DataTemplate local:MoonPage}"/>
-        </Tab>
-        <Tab Title="Sound Board">
-            <ShellContent ContentTemplate="{DataTemplate local:SoundBoard}"/>
-        </Tab>
-    </TabBar>-->
-
-    <!--<Shell.FlyoutFooter>
-        <Grid HeightRequest="100" BackgroundColor="DarkSlateBlue">
-            <Label TextColor="White" Text="I'm a footer"/>
-        </Grid>
-    </Shell.FlyoutFooter>-->
-       
+             
 
 </Shell>

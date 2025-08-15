@@ -49,9 +49,6 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
-    <MauiXaml Update="CustomTransport.xaml">
-      <Generator>MSBuild:Compile</Generator>
-    </MauiXaml>
     <MauiXaml Update="jandg.xaml">
       <Generator>MSBuild:Compile</Generator>
     </MauiXaml>

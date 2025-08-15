@@ -1,14 +1,24 @@
-<?xml version = "1.0" encoding = "UTF-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <Application xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:Moonstone3"
              x:Class="Moonstone3.App">
     <Application.Resources>
-        <ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="Resources/Styles/Colors.xaml" />
-                <ResourceDictionary Source="Resources/Styles/Styles.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>
+        <!-- Define purple color resources using SolidColorBrush -->
+        <SolidColorBrush x:Key="PrimaryPurple" Color="#800080" />
+        <SolidColorBrush x:Key="LightPurple" Color="#E6E6FA" />
+        <SolidColorBrush x:Key="TextPurple" Color="#4B0082" />
+
+        <!-- Global styles for controls -->
+        <Style TargetType="ContentPage">
+            <Setter Property="BackgroundColor" Value="{StaticResource LightPurple}" />
+        </Style>
+        <Style TargetType="Button">
+            <Setter Property="BackgroundColor" Value="{StaticResource LightPurple}" />
+            <Setter Property="TextColor" Value="{StaticResource PrimaryPurple}" />
+            <Setter Property="CornerRadius" Value="8" />
+        </Style>
+        <Style TargetType="Label">
+            <Setter Property="TextColor" Value="{StaticResource TextPurple}" />
+        </Style>
     </Application.Resources>
 </Application>
