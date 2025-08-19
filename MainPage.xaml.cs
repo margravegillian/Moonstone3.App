@@ -67,5 +67,9 @@ public partial class MainPage : ContentPage
     //    }
 
     //}
+    private async void OnWebsiteTapped(object sender, TappedEventArgs e)
+    {
+        await Browser.Default.OpenAsync("https://www.margravesenclave.com", BrowserLaunchMode.SystemPreferred);
+    }
 }
 

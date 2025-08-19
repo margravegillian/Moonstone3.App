@@ -5,28 +5,74 @@
              Title="ContactPage">
 
     <ScrollView>
-    <VerticalStackLayout Padding="20" Spacing="20">
-        <Label 
+        <VerticalStackLayout Padding="30" Spacing="50">
+            <Label 
                 Text="Contact Me"
                 FontSize="28"
                 TextColor="#800080"
                 HorizontalOptions="Center" />
-        <Image
+            <Image
+                x:Name="contactImage"
+                AutomationId="contactImage"
                 Source="contactcard.png"
                 SemanticProperties.Description="Contact Image"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
+                HeightRequest="100"
+                WidthRequest="100"
+                HorizontalOptions="Center" >
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnImageTapped" />
+                </Image.GestureRecognizers>
+            </Image>
             <Label
                 Text="Pay Me"
                 FontSize="28"
                 TextColor="#800080"
                 HorizontalOptions="Center"/>
-            <Image
-                Source="venmome.jpg"
-                SemanticProperties.Description="Venmo Image"
-                HeightRequest="200"
-                HorizontalOptions="Center" />
 
-    </VerticalStackLayout>
+            <!-- Venmo and PayPal side by side -->
+            <HorizontalStackLayout HorizontalOptions="Center" Spacing="40">
+                <!-- Venmo -->
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <Label
+                        Text="Venmo"
+                        FontSize="20"
+                        TextColor="#800080"
+                        HorizontalOptions="Center"/>
+                    <Image
+                        x:Name="venmoImage"
+                        AutomationId="venmoImage"
+                        Source="venmome.jpg"
+                        SemanticProperties.Description="Venmo Image"
+                        HeightRequest="100"
+                        WidthRequest="100"
+                        HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnImageTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </VerticalStackLayout>
+
+                <!-- PayPal -->
+                <VerticalStackLayout HorizontalOptions="Center">
+                    <Label
+                        Text="PayPal"
+                        FontSize="20"
+                        TextColor="#800080"
+                        HorizontalOptions="Center"/>
+                    <Image
+                        x:Name="paypalImage"
+                        AutomationId="paypalImage"
+                        Source="paypal.png"
+                        SemanticProperties.Description="Paypal Image"
+                        HeightRequest="100"
+                        WidthRequest="100"
+                        HorizontalOptions="Center">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnImageTapped" />
+                        </Image.GestureRecognizers>
+                    </Image>
+                </VerticalStackLayout>
+            </HorizontalStackLayout>
+        </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

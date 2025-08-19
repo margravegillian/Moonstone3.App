@@ -17,36 +17,16 @@
                 HeightRequest="400"
                 HorizontalOptions="Center" />
 
-            <!--<Label 
-            x:Name="label"
-            Text="Moonstone"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />-->
 
-            <!--<Switch
-                x:Name="moonstone"
-                
-                HorizontalOptions="Center"
-                IsToggled="False"
-                Toggled="switcher_Toggled"
-                />--><!--
-            <ImageButton
-                x:Name="moonpic"
-                Source="moon2.png"
-                SemanticProperties.Description="moon"
-                HeightRequest="200"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
-                Clicked="OnImageButtonClicked"
-                
-               />
-            <Button
-                x:Name="SndBtn"
-                Text="Sound Board"
-                Clicked="OnSndBtnClicked"
-                
-                />-->
-
+            <Label
+                Text="Margravesenclave"
+                FontSize="20"
+                TextColor="#800080"
+                HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnWebsiteTapped" />
+                </Label.GestureRecognizers>
+            </Label>
         </VerticalStackLayout>
     </ScrollView>
 
